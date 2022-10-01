@@ -10,11 +10,11 @@ Team members :
 Before running the main files please make sure you have all the required libraries in requirements.txt installed.
 
 QSnake Rules:
-  Most of the rules are similar to that of classical snake game:
-     a. The player uses the arrow keys to move the "snake" around the board.
-     b. As the snake finds food, it eats the food, and thereby grows larger. 
-     c. The game ends when the snake either moves off the screen or moves into itself.
-     d. The goal is to make the snake as large as possible before the game ends.
+Most of the rules are similar to that of classical snake game:
+a. The player uses the arrow keys to move the "snake" around the board.
+b. As the snake finds food, it eats the food, and thereby grows larger.
+c. The game ends when the snake either moves off the screen or moves into itself.
+d. The goal is to make the snake as large as possible before the game ends.
   To increase the complexity of the game we modified the rules:
      e. Instead of only 1 food as in classical game, we have added 2 poisons to the board.
      f. There are 4 types of food which work as following when consumed iff there are no curses accumulated, otherwise curse count decreases by 1:
