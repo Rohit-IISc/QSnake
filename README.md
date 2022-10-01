@@ -28,3 +28,8 @@ QSnake Rules:
           iii.  Orange         : Decreases the length of snake by 4 units.
           iv.   Red            : Instant Death/Game over.
      h. Whenever an item is consumed, game environment resets itself with new positions of 1 food and 2 poisons.
+
+Following is the interface:
+  Top left corner shows Score, Stealth and Curses accumulated.
+  There's one stealth food(white), one curse poison (purple) and one death poison (red) in the state below.
+![image](https://user-images.githubusercontent.com/56411951/193431319-45024466-967c-41c6-89e8-5ded30641b1a.png)
