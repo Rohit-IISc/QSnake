@@ -13,19 +13,19 @@ QSnake Rules:
 
 Most of the rules are similar to that of classical snake game:
 
-a. The player uses the arrow keys to move the "snake" around the board.
+  a. The player uses the arrow keys to move the "snake" around the board.
 
-b. As the snake finds food, it eats the food, and thereby grows larger.
+  b. As the snake finds food, it eats the food, and thereby grows larger.
 
-c. The game ends when the snake either moves off the screen or moves into itself.
+  c. The game ends when the snake either moves off the screen or moves into itself.
 
-d. The goal is to make the snake as large as possible before the game ends.
+  d. The goal is to make the snake as large as possible before the game ends.
 
 To increase the complexity of the game we modified the rules:
 
-e. Instead of only 1 food as in classical game, we have added 2 poisons to the board.
+  e. Instead of only 1 food as in classical game, we have added 2 poisons to the board.
 
-f. There are 4 types of food which work as following when consumed iff there are no curses accumulated, otherwise curse count decreases by 1:
+  f. There are 4 types of food which work as following when consumed iff there are no curses accumulated, otherwise curse count decreases by 1:
 
           i.    Mustard       : Increases the length of snake by 1 unit.
           
@@ -35,7 +35,7 @@ f. There are 4 types of food which work as following when consumed iff there are
           
           iv.   Dark Green    : Increases the length of snake by 15 units.
           
- g. There are 4 types of poisons which work as following when consumed iff there are no stealths accumulated, otherwise stealth count decreases by 1:
+  g. There are 4 types of poisons which work as following when consumed iff there are no stealths accumulated, otherwise stealth count decreases by 1:
  
           i.    Pink          : Decreases the length of snake by 1 unit.
           
@@ -45,7 +45,7 @@ f. There are 4 types of food which work as following when consumed iff there are
           
           iv.   Red           : Instant Death/Game over.
           
-h. Whenever an item is consumed, game environment resets itself with new positions of 1 food and 2 poisons.
+  h. Whenever an item is consumed, game environment resets itself with new positions of 1 food and 2 poisons.
 
 Following is the interface:
   Top left corner shows Score, Stealth and Curses accumulated.
