@@ -73,7 +73,7 @@ def sorting_and_indexing(state_vec_rep):
     index=0
     for num in srt:
         if index>=8:
-            index=index-8
+            index=index%8
         dict_indx[num]=index
         index+=1
     dict_freq={} #for capturing the probability distribution of each index OR probability amplitude
