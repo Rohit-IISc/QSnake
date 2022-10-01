@@ -37,6 +37,6 @@ Following is the interface:
 
 Where's the Quantum Part?
   We have used a variation of QCA(Quantum Cellular Automaton) devised in analogy to conventional models of cellular automata introduced by John von Neumann, wherein
-  each cell changes state as a function of time, according to a defined set of rules driven by the states of neighboring cells.
+  each cell changes state as a function of time, according to a defined set of rules driven by the states of neighboring cells. 
   
   ![image](https://user-images.githubusercontent.com/56411951/193431523-575e6b6e-0523-4485-ab57-60f2c246406b.png)
