@@ -58,3 +58,12 @@ Where's the Quantum Part?
   each cell changes state as a function of time, according to a defined set of rules driven by the states of neighboring cells. 
   
   ![image](https://user-images.githubusercontent.com/56411951/193431523-575e6b6e-0523-4485-ab57-60f2c246406b.png)
+
+Quantum Implementation (this code can be found in SnakeQCAModule.py):
+
+  Step 1: Initialized a 10 qubit circuit comprising of random X gate (to have initial state of 1 in some qubits) followed by H gate for superposition and CNOT gates for entanglement and interaction.
+  Step 2: Unitary operator with random values of Theta, Phi and Lambda was defined to act upon the initial circuit.
+  Step 3: At each time-step/iteration this unitary is multiplied to the previous state to get the next state, such that at step t: state = U(U(U(..t times(S)..))) where S was the initail state.
+  Step 4: At each time-step the elements of final state-vector representation obtained were normalised using L2 distance.
+  Step 5: These 1024 elements gave n unique amplitudes corresponding to each state.
+  Step 6: As we only required 8 outcomes, we encoded these n amplitudes such that
