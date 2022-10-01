@@ -33,7 +33,7 @@ dis_width = 600
 dis_height = 600
  
 dis = pygame.display.set_mode((dis_width, dis_height))
-pygame.display.set_caption('Quantum Snakes')
+pygame.display.set_caption('QSnake')
  
 clock = pygame.time.Clock()
  
