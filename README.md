@@ -23,13 +23,20 @@ QSnake Rules:
           iii.  Green         : Increases the length of snake by 4 units.
           iv.   Dark Green    : Increases the length of snake by 15 units.
      g. There are 4 types of poisons which work as following when consumed iff there are no stealths accumulated, otherwise stealth count decreases by 1:
-          i.    Pink           : Decreases the length of snake by 1 unit.
-          ii.   Purple         : Decreases the length of snake by 1 unit and updates the "curse" count to 2.
-          iii.  Orange         : Decreases the length of snake by 4 units.
-          iv.   Red            : Instant Death/Game over.
+          i.    Pink          : Decreases the length of snake by 1 unit.
+          ii.   Purple        : Decreases the length of snake by 1 unit and updates the "curse" count to 2.
+          iii.  Orange        : Decreases the length of snake by 4 units.
+          iv.   Red           : Instant Death/Game over.
      h. Whenever an item is consumed, game environment resets itself with new positions of 1 food and 2 poisons.
 
 Following is the interface:
   Top left corner shows Score, Stealth and Curses accumulated.
   There's one stealth food(white), one curse poison (purple) and one death poison (red) in the state below.
 ![image](https://user-images.githubusercontent.com/56411951/193431319-45024466-967c-41c6-89e8-5ded30641b1a.png)
+
+
+Where's the Quantum Part?
+  We have used a variation of QCA(Quantum Cellular Automaton) devised in analogy to conventional models of cellular automata introduced by John von Neumann, wherein
+  each cell changes state as a function of time, according to a defined set of rules driven by the states of neighboring cells.
+  
+  ![image](https://user-images.githubusercontent.com/56411951/193431523-575e6b6e-0523-4485-ab57-60f2c246406b.png)
