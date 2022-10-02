@@ -91,7 +91,7 @@ Quantum Implementation (this code can be found in SnakeQCAModule.py):
   
 Explanation to points 5,6:
 
-  _**Consider these 1024 states to be houses, each house having a bulb/light of a different intensity. When we measure these intensities we find there are only n unique intensities spread across all these houses. We start counting the houses associated to each intensity and get the frequency distribution and then the corresponding probabilities. These probabilities were used as the probabilities of occurrance of each type of poison/food while all being in super-position until collapsed/measured.**
+  _**Consider these 1024 states to be houses, each house having a bulb/light of a different intensity. When we measure these intensities we find there are only n unique intensities spread across all these houses. We start counting the houses associated to each intensity and get the frequency distribution and then the corresponding probabilities. These probabilities were used as the probabilities of occurrance of each type of poison/food while all being in super-position until collapsed/measured.**_
   
 
 Way Forward:
