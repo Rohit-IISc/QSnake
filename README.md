@@ -16,7 +16,7 @@ SnakeQCAModule.py : Module containing QCA implementation using qiskit.
 
 QSnake.py         : Main file containg the game code.
 
-Licence           : MIT Licence as part of requirements.
+License           : MIT License as part of requirements.
 
 **QSnake Rules**:
 
