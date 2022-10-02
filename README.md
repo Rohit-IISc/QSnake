@@ -49,12 +49,14 @@ To increase the complexity of the game we modified the rules:
   h. Whenever an item is consumed, game environment resets itself with new positions of 1 food and 2 poisons.
 
 Following is the interface:
+
   Top left corner shows Score, Stealth and Curses accumulated.
   There's one stealth food(white), one curse poison (purple) and one death poison (red) in the state below.
 ![image](https://user-images.githubusercontent.com/56411951/193431319-45024466-967c-41c6-89e8-5ded30641b1a.png)
 
 
 Where's the Quantum Part?
+
   We have used a variation of QCA(Quantum Cellular Automaton) devised in analogy to conventional models of cellular automata introduced by John von Neumann, wherein
   each cell changes state as a function of time, according to a defined set of rules driven by the states of neighboring cells. 
   
@@ -89,11 +91,12 @@ Quantum Implementation (this code can be found in SnakeQCAModule.py):
   
 Explanation to points 5,6:
 
-  Comnsider these 1024 states to be houses, each house having a bulb/light of a different intensity. When we measure these intensities we find there are only n unique intensities spread across all these houses. We start counting the houses associated to each intensity and get the frequency distribution and then the corresponding probabilities. These probabilities were used as the probabilities of occurance of each type of poison/food while all being in super-position until collapsed/measured.
+  _**Consider these 1024 states to be houses, each house having a bulb/light of a different intensity. When we measure these intensities we find there are only n unique intensities spread across all these houses. We start counting the houses associated to each intensity and get the frequency distribution and then the corresponding probabilities. These probabilities were used as the probabilities of occurrance of each type of poison/food while all being in super-position until collapsed/measured.**
   
 
 Way Forward:
 
-1. Currently we used random.random module for choosing the cells to place the items, we intend to use Quantum variant of the same.
-2. We plan on using Quantum enhanced Reinforcement Learning to create an auto-pilot mode where the snake is left to play on it's on and learns to survive in the environment.
-3. Next we plan to optimise the auto-pilot mode for Hamiltonian cycle.
+1. Better UI-UX for next version.
+2. Currently we used random.random module for choosing the cells to place the items, we intend to use Quantum variant of the same.
+3. We plan on using Quantum enhanced Reinforcement Learning to create an auto-pilot mode where the snake is left to play on it's on and learns to survive in the environment.
+4. Next we plan to optimise the auto-pilot mode for Hamiltonian cycle.
