@@ -95,8 +95,8 @@ def gameLoop():
     while not game_over:
  
         while game_close == True:
-            #dis.fill(blue)
-            dis.fill((random.random()*255,random.random()*255,random.random()*255))
+            dis.fill(blue)
+            #dis.fill((random.random()*255,random.random()*255,random.random()*255))
             message("You Lost! Press C-Play Again or Q-Quit", red)
             Your_score(Length_of_snake - 1)
             pygame.display.update()
