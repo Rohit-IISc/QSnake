@@ -67,7 +67,7 @@ Quantum Implementation (this code can be found in SnakeQCAModule.py):
   ![image](https://user-images.githubusercontent.com/56411951/193432248-f30d5d0b-e0ff-4d3c-86e5-0241330be36c.png)
 
   
-  Step 3: At each time-step/iteration this unitary is multiplied to the previous state to get the next state, such that at step t: state = U(U(U(..t times(S)..))) where S was the initial state.
+  Step 3: At each time-step/iteration this unitary is multiplied to the previous state to get the next state, such that at step t: state = U(U(U(..t times(S)..))) where S was the initial state. After a certain number of iterations this step was slowing the process so we limited it to 15 time steps, post which a new initial state is initialised and Step 1-3 are repeated.
   
   Step 4: At each time-step the elements of final state-vector representation obtained were normalised using L2 distance.
   
@@ -76,6 +76,7 @@ Quantum Implementation (this code can be found in SnakeQCAModule.py):
   Step 6: As we only required 8 outcomes, we encoded these n unique amplitudes by sorting and indexing these amplitudes and then restricting the index between 0 & 7 and storing their respective frequencies out of 1024.
   
   Step 7: These indexes were then labelled alterating between poison and food, and then were encoded back using a 2 qubit system and RY gates as follows:
+  
   ![image](https://user-images.githubusercontent.com/56411951/193432260-43ee345f-dc57-413a-923a-38bbf6afa56c.png)
   ![image](https://user-images.githubusercontent.com/56411951/193432270-1235293c-885f-4dd1-9e3e-9fe5a98347ab.png)
 
@@ -84,3 +85,14 @@ Quantum Implementation (this code can be found in SnakeQCAModule.py):
   Step 9: Random cell coordinates were chosen to place these items on the grid, excluding the cells having snake or already chosen for another item.
   
   Step 10: Chosen items along with their X,Y coordinates were passed on to game module for game play.
+  
+Explanation to points 5,6:
+
+  Comnsider these 1024 states to be houses, each house having a bulb/light of a different intensity. When we measure these intensities we find there are only n unique intensities spread across all these houses. We start counting the houses associated to each intensity and get the frequency distribution and then the corresponding probabilities. These probabilities were used as the probabilities of occurance of each type of poison/food while all being in super-position until collapsed/measured.
+  
+
+Way Forward:
+
+1. Currently we used random.random module for choosing the cells to place the items, we intend to use Quantum variant of the same.
+2. We plan on using Quantum enhanced Reinforcement Learning to create an auto-pilot mode where the snake is left to play on it's on and learns to survive in the environment.
+3. Next we plan to optimise the auto-pilot mode for Hamiltonian cycle.
