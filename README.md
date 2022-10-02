@@ -106,7 +106,7 @@ Explanation to points 5,6:
 
 Way Forward:
 
-1. Better UI-UX for next version.
+1. Better UI-UX and a web app for the next version.
 2. Currently we used random.random module for choosing the cells to place the items, we intend to use Quantum variant of the same.
 3. We plan on using Quantum enhanced Reinforcement Learning to create an auto-pilot mode where the snake is left to play on it's on and learns to survive in the environment.
 4. Next we plan to optimise the auto-pilot mode for Hamiltonian cycle.
