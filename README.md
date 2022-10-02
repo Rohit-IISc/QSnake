@@ -14,7 +14,7 @@ SnakeQCAModule.py : Module containing QCA implementation using qiskit.
 
 QSnake.py         : Main file containg the game code.
 
-QSnake Rules:
+**QSnake Rules**:
 
 Most of the rules are similar to that of classical snake game:
 
@@ -65,7 +65,7 @@ Where's the Quantum Part?
   We have used a variation of QCA(Quantum Cellular Automaton) devised in analogy to conventional models of cellular automata introduced by John von Neumann, wherein
   each cell changes state as a function of time, according to a defined set of rules driven by the states of neighboring cells. 
   
-  ![image](https://user-images.githubusercontent.com/56411951/193431523-575e6b6e-0523-4485-ab57-60f2c246406b.png)
+  ![1_KndgQpIlxcxxuIb9takepw](https://user-images.githubusercontent.com/56411951/193433968-a18c0ad2-cefb-4f3c-85f3-67543ce4441c.gif)
 
 Quantum Implementation (this code can be found in SnakeQCAModule.py):
 
