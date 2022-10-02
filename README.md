@@ -8,15 +8,14 @@ Team members :
   4. Santanu Banerjee
   5. Yuri Han
 
-QSnake.mp4        : Video presentation of ~5min explaining the concept and implementation.
+**Files:**
 
-requirements.txt  : All the required libraries to be installed before running the following.
-
-SnakeQCAModule.py : Module containing QCA implementation using qiskit.
-
-QSnake.py         : Main file containg the game code.
-
-License           : MIT License as part of requirements.
+    1. QSnake.mp4        : Video presentation of ~5min explaining the concept and implementation.
+    2. requirements.txt  : All the required libraries to be installed before running the following.
+    3. SnakeQCAModule.py : Module containing QCA implementation using qiskit.
+    4. QSnake.py         : Main file containg the game code.
+    5. License           : MIT License as part of requirements.
+    
 
 **QSnake Rules**:
 
