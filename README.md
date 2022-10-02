@@ -52,6 +52,7 @@ Following is the interface:
 
   Top left corner shows Score, Stealth and Curses accumulated.
   There's one stealth food(white), one curse poison (purple) and one death poison (red) in the state below.
+  
 ![image](https://user-images.githubusercontent.com/56411951/193431319-45024466-967c-41c6-89e8-5ded30641b1a.png)
 
 
@@ -67,6 +68,7 @@ Quantum Implementation (this code can be found in SnakeQCAModule.py):
   Step 1: Initialized a 10 qubit circuit comprising of random X gate (to have initial state of 1 in some qubits) followed by H gate for superposition and CNOT gates for entanglement and interaction.
   
   Step 2: Unitary operator with random values of Theta, Phi and Lambda was defined to act upon the initial circuit.
+  
   ![image](https://user-images.githubusercontent.com/56411951/193432248-f30d5d0b-e0ff-4d3c-86e5-0241330be36c.png)
 
   
